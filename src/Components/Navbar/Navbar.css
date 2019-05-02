@@ -1,0 +1,21 @@
+.navbar-container {
+    width: 100%;
+    height: 10%;
+    background: #38a5da;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.navbar-container h1 {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 20px;
+}
