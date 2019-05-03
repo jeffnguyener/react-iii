@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import './Buttons.css'
 
-export default function Buttons(){
+export default function Buttons(props) {
     return (
-        <div>
-            Buttons
+        <div class="buttons-container">
+            <buttons onClick={props.prev}>{`< Previous`}</buttons>
+            <buttons onClick={props.next}>{`Next >`}</buttons>
 
         </div>
     )

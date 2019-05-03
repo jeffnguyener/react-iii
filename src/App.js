@@ -14,18 +14,32 @@ export default class App extends Component {
     super()
 
     this.state = {
-      users: users
-
+      users: users,
+      page: 1
     }
   }
 
+  next = () => {
+    this.setState({
+      page: this.state.page + 1
+    });
+  };
+
+  prev = () => {
+    this.setState({
+      page: this.state.page - 1
+    });
+  };
 
   render (){
+    const filteredUser = this.state.users.filter(user => (
+      user.id === this.state.page
+    ));
     return(
       <div className="app-container">
         <Navbar />
-        <Content />
-        <Buttons />
+        <Content filteredUser={filteredUser} />
+        <Buttons next={this.next} prev={this.prev} />
 
       </div>
     )
