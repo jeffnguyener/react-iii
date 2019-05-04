@@ -4,13 +4,32 @@
     background: #ebebeb;
     margin-top: 7%;
     position: relative;
-
 }
-.page-count-container {
+
+.page-index {
     width: 5%;
     height: 10%;
     position: absolute;
     right: 10px;
     top: 10px;
-    font-size: 25px
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.user {
+    position: absolute;
+    left: 75px;
+    top: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.from {
+    position: absolute;
+    /* left: 75px; */
+    top: 50px;
+    font-size: 18px;
+    font-weight: bolder;
 }
