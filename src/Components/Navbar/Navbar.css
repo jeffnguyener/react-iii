@@ -9,7 +9,7 @@
 
 }
 
-.navbar-container h1 {
+.navbar-container > h1 {
     width: 90%;
     height: 100%;
     display: flex;

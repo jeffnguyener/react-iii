@@ -11,7 +11,7 @@ export default function Contents(props){
     return (
         <div className="content-container">
             <div className="page-count-container">
-                {mappedUser.id}
+                {mappedUser}
             </div>
         </div>
     )
