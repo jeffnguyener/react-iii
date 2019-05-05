@@ -10,26 +10,34 @@
     width: 5%;
     height: 10%;
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 10px;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: bolder;
 }
 
 .user {
-    position: absolute;
-    left: 75px;
-    top: 50px;
+    margin: 50px 0 0 75px;
     font-size: 25px;
     font-weight: bolder;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
+    width: auto;
+}
+
+#username {
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #38a5da;
+    width: 58%;   
 }
 
 .from {
-    position: absolute;
-    /* left: 75px; */
-    top: 50px;
-    font-size: 18px;
-    font-weight: bolder;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background: blue;
+}
+
+span {
+    font-weight: 400;
 }

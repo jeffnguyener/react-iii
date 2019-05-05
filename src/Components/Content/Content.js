@@ -7,15 +7,16 @@ export default function Contents(props) {
         const userData = data[user.id - 1]
         return (
             <div>
-                <h1 className="page-index"> {user.id}/25</h1>
+                <h1 className="page-index">{user.id}/25</h1>
                 <div className="user">
-                    <h1>{userData.name.first} {userData.name.last}
+                    <h1 id="username">{userData.name.first} {userData.name.last}
                     </h1>
                     <div className="from">
-                        <h1>From</h1>{userData.city}
+                        <h1>From: <span>{userData.city}</span></h1>
+                        <h1>Job Title: <span>{userData.title}</span></h1>
+                        <h1>Employer: <span>{userData.employer}</span></h1>
                     </div>
                 </div>
-
             </div>
         )
     });
