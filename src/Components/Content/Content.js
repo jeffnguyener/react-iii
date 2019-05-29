@@ -12,18 +12,18 @@ export default function Contents(props) {
                     <h1 id="username">{userData.name.first} {userData.name.last}
                     </h1>
                     <div className="from">
-                        <h1>From: <span>{userData.city}</span></h1>
-                        <h1>Job Title: <span>{userData.title}</span></h1>
-                        <h1>Employer: <span>{userData.employer}</span></h1>
+                        <h1>From: <span>{userData.city}</span></h1><br></br>
+                        <h1>Job Title: <span>{userData.title}</span></h1><br></br>
+                        <h1>Employer: <span>{userData.employer}</span></h1><br></br>
+                    </div>
+                    <div className="movies">
+                        <h1>Favorite Movies:</h1>
+                        <ul>{userData.favoriteMovies}</ul>
                     </div>
                 </div>
             </div>
         )
     });
-
-
-
-
 
     return (
         <div className="content-container">
